@@ -6,6 +6,38 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+          <!-- Products -->
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Products</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="viewproducts.php">View All Products</a></li>
+                <li class="nav-item"> <a class="nav-link" href="addnewproduct.php">Jeans</a></li>
+                
+              </ul>
+            </div>
+          </li>
+          <!-- products end -->
+          <!-- Categories -->
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Categories</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic2">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="viewCategories.php">View All Categories</a></li>
+                <li class="nav-item"> <a class="nav-link" href="addnewCategory.php">Add new Category</a></li>
+     
+              </ul>
+            </div>
+          </li>
+          <!-- Categories end -->
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="icon-layout menu-icon"></i>
