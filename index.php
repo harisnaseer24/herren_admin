@@ -4,6 +4,7 @@ session_start();
 $date= date('Y-m-d');
 if(!isset($_SESSION['isAdmin'])){
   header("location: ./pages/samples/login.php");
+  
 
 }
 ?>

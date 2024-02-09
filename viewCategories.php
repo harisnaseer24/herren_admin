@@ -43,6 +43,7 @@ if(!isset($_SESSION['isAdmin'])){
                           <th>Description</th>
                           <th>Picture</th>
                           <th>Status</th>
+                          <th>Change Status</th>
                           <th>Action</th>
                         </tr>  
                       </thead>
@@ -55,23 +56,7 @@ if(!isset($_SESSION['isAdmin'])){
                           <td>21 Sep 2018</td>
                           <td class="font-weight-medium"><div class="badge badge-success">Completed</div></td>
                         </tr>
-                        <tr>
-                          <td>Search Engine Optimization</td>
-                          <td class="font-weight-bold">$116</td>
-                          <td>13 Jun 2018</td>
-                          <td>13 Jun 2018</td>
-                          <td>13 Jun 2018</td>
-                          <td class="font-weight-medium"><div class="badge badge-success">Completed</div></td>
-                        </tr>
                        
-                        <tr>
-                          <td>E-Mail Marketing</td>
-                          <td class="font-weight-bold">$781</td>
-                          <td>01 Nov 2018</td>
-                          <td>01 Nov 2018</td>
-                          <td>01 Nov 2018</td>
-                          <td class="font-weight-medium"><div class="badge badge-danger">Cancelled</div></td>
-                        </tr>
                      
                       </tbody>
                     </table>

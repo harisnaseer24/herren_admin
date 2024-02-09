@@ -6,6 +6,12 @@ if(!isset($_SESSION['isAdmin'])){
   header("location: ./pages/samples/login.php");
 
 }
+require("./partials/config.php");
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,30 +44,22 @@ if(!isset($_SESSION['isAdmin'])){
                   <p class="card-description">
                     add new categroy to the herren
                   </p>
-                  <form class="forms-sample" enctype="multipart/form-data">
+                  <form class="forms-sample" method="POST" action="./process/inserts.php" enctype="multipart/form-data">
                     <div class="form-group">
                       <label for="category_name">Category Name</label>
                       <input type="text" class="form-control" id="category_name" name="category_name" placeholder="Category Name">
                     </div>
                     <div class="form-group">
-                      <label for="category_name">Category description</label>
+                      <label for="category_description">Category Description</label>
                       <input type="text" class="form-control" id="category_description" name="category_description" placeholder="Category description">
                     </div>
-                   
-                    
                     <div class="form-group">
-                      <label>File upload</label>
-                      <input type="file" name="category_image" id="category_image"class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image" value="">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" onclick="document.getElementById('category_image').click()" type="button">Upload</button>
-                        </span>
-                      </div>
+                      <label for="category_image">Category Picture</label>
+                      <input type="file" class="btn text-primary form-control" id="category_image" name="category_image" >
                     </div>
-                   
-                    <button type="submit" class="btn btn-primary mr-2">Add Category</button>
-                    <button class="btn btn-light">Cancel</button>
+                    
+                    <button type="submit" class="btn btn-primary mr-2" name="addCategory">Add Category</button>
+                    
                   </form>
                 </div>
               </div>
